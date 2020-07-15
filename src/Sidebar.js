@@ -26,8 +26,11 @@ const theme = createMuiTheme({
 const color = orange[500];
 */ 
 
+const test = () => {
+  console.log("test");
+};
 
-
+//later on add a way to add dynamic sublists and also a way to type in different labels for the sidebar items
 function SidebarItem({ label, items, depthStep = 10, depth = 0, ...rest }) {
   return (
     <>
@@ -65,7 +68,8 @@ function Sidebar({ items, depthStep, depth }) {
           />
         ))}
       </List>
-      <Fab size="small" color= "color"  aria-label="Add" className="addButton">
+
+      <Fab className = "addButton" onClick = {test} size="small" color= "color"  aria-label="Add" >
           <AddIcon />
       </Fab>
     </div>

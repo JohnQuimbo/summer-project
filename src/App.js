@@ -1,46 +1,28 @@
 import React from 'react'
 import Sidebar from './Sidebar'
+import HomepageCard from './Homepage'
+import HomepageInterface from './HomepageInterface'
 
 
 const items = [
   { name: 'home', label: 'Home' },
-  {
-    name: 'billing',
-    label: 'Billing',
-    items: [
-      { name: 'statements', label: 'Statements' },
-      { name: 'reports', label: 'Reports' },
-    ],
-  },
-  {
-    name: 'settings',
-    label: 'Settings',
-    items: [
-      { name: 'profile', label: 'Profile' },
-      { name: 'insurance', label: 'Insurance' },
-      { name: 'notifications',
-        label: 'Notifications',
-        items: [
-          { name: 'email', label: 'Email' },
-          {
-            name: 'desktop',
-            label: 'Desktop',
-            items: [
-              { name: 'schedule', label: 'Schedule' },
-              { name: 'frequency', label: 'Frequency' },
-            ],
-          },
-          { name: 'sms', label: 'SMS' },
-        ],
-      },
-    ],
-  },
+  { name: 'skate', label: 'Skateboarding'},
+  { name: 'yoga', label: 'Yoga'},
+  { name: 'singing', label: 'Singing'},
+  { name: 'running', label: 'Running'},
+  { name: 'drumming', label: 'Drumming'},
+  { name: 'guitar', label: 'Guitar'},
+  { name: 'music production', label: 'Music Production'},
+  { name: 'coding', label: 'Coding'},
+  { name: 'music theory', label: 'Music Theory'},
+  { name: 'tagalog', label: 'Tagalog'},
 ]
 
 function App() {
   return (
     <div>
       <Sidebar items={items} />
+      <HomepageInterface />
     </div>
   )
 } 
