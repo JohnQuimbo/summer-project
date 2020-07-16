@@ -35,8 +35,8 @@ body {
 }
 
 .homepageCard{
-  width: 225px; 
-  height: 225px;
+  width: 20%; 
+  height: 20%;
   margin: 5px;
   display: inline-block;
 }

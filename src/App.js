@@ -1,6 +1,6 @@
 import React from 'react'
 import Sidebar from './Sidebar'
-import HomepageCard from './Homepage'
+import HomepageCard from './HomepageCard'
 import HomepageInterface from './HomepageInterface'
 
 
@@ -22,7 +22,7 @@ function App() {
   return (
     <div>
       <Sidebar items={items} />
-      <HomepageInterface />
+      <HomepageInterface items = {items} />
     </div>
   )
 } 
